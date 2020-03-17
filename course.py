@@ -51,7 +51,7 @@ for i in range(len(evens)):
     b = evens[i][17].split('/')
     evens[i][17] = b[1]
     del evens[i][9]
-    del evens[i][12]
+    del evens[i][10]
     a = 'https://portal.hanyang.ac.kr/openPop.do?header=hidden&url=/haksa/SughAct/findSuupPlanDocHyIn.do&flag=DN&year=2020&term=10&suup='+str(evens[i][4])
     evens[i].append(a)
 
