@@ -1,6 +1,6 @@
 from bs4 import BeautifulSoup
 import pandas as pd
-import numpy as npa
+import numpy as np
 
 page = open('./course.html')
 soup = BeautifulSoup(page, 'lxml')
