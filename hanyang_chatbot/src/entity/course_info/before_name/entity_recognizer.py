@@ -4,7 +4,7 @@ from MeCab import Tagger
 
 m = Mecab('/Users/maeyoung/mecab-ko-dic-2.1.1-20180720')
 
-def get_normal_entity(sentence):
+def get_before_name_entity(sentence):
     words = m.pos(sentence)
     
     #print(words)
@@ -29,7 +29,7 @@ def get_normal_entity(sentence):
         elif category == '교수명':
             keyword.append(parse)
             tag.append("PROFESSOR")
-        elif category == '학과명':
+        elif category == '설강학과':
             keyword.append(parse)
             tag.append("DEPARTMENT")
 

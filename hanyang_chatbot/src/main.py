@@ -1,6 +1,10 @@
+from flask import Flask
+app = Flask(__name__)
+
 import warnings
 warnings.filterwarnings(action='ignore')
 
+@app.route("/")
 def main():
     import application as app
     app.run()
@@ -17,6 +21,6 @@ def clear_log():
 
 if __name__ == '__main__':
     print('I\'m preparing for answering...')
-    print('Provided Feature : 강의교수님', end='\n\n')
+    print('Provided Feature : 수강신청정보', end='\n\n')
     clear_log()
     main()
