@@ -63,7 +63,7 @@ MarkupSafe==1.1.1
 mathparse==0.1.2
 matplotlib==3.1.1
 mecab-python3==0.996.3
-mistune==0.8.4
+mistune==2.0.3
 more-itertools==8.0.2
 msgpack==0.6.1
 msgpack-numpy==0.4.3.2
